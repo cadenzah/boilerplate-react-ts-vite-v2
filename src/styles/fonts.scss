@@ -1,0 +1,24 @@
+/* https://wess.tistory.com/264 */
+/* https://github.com/webfontworld/kopus */
+@font-face {
+  font-family: 'KoPubWorldBatang';
+  font-weight: 300;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldBatangLight.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'KoPubWorldDotum';
+  font-weight: 300;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'KoPubWorldDotum';
+  font-weight: 500;
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumMedium.woff2') format('woff2');
+  font-display: swap;
+}

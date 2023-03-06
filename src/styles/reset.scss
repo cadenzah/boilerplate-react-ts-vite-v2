@@ -1,0 +1,51 @@
+@import '@/styles/variable.scss';
+
+// Mobile Safari browser's height issue patch
+// https://dev.to/maciejtrzcinski/100vh-problem-with-ios-safari-3ge9
+:root {
+  --app-height: 100%;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  height: var(--app-height);
+  min-width: 200px;
+}
+
+p {
+  margin: 0;
+}
+
+// https://stackoverflow.com/questions/779434
+* {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+}
+
+html {
+  font-size: 16px;
+  // letter-spacing: -0.5px; // 자간
+}
+* {
+  font-family: 'KoPubWorldBatang';
+}
+
+// react-toastify
+.Toastify__toast-body {
+  font-size: 0.8rem;
+}

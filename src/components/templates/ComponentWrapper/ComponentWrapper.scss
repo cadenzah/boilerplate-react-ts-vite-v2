@@ -1,0 +1,38 @@
+@import '@/styles/main.scss';
+
+.component-wrapper-outer {
+  position: relative;
+
+  &.primary {
+    background-color: $primary-background-color;
+  }
+
+  .component-wrapper-inner {
+    padding: 2rem $wrapper-padding-side;
+
+    &.fit {
+      height: 100vh;
+      padding: 0;
+    }
+
+    &:not(.fit) {
+      // Mobile
+      margin: 0 auto;
+      @media screen and (min-width: $mq-medium) and (max-width: calc($mq-large - 1px)) {
+        // Tablet
+        width: $mq-medium;
+      }
+      @media screen and (min-width: $mq-large) {
+        // PC
+        width: $mq-large;
+      }
+    }
+
+    &.clearTopMargin {
+      padding-top: 0;
+    }
+    &.clearBottomMargin {
+      padding-bottom: 0;
+    }
+  }
+}

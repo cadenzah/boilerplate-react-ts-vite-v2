@@ -1,0 +1,38 @@
+name: Build and Deploy on Github Page
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  setup-build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js 🔧
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Checkout to ${{ github.ref }} branch 🛎️
+        uses: actions/checkout@v3
+
+      - name: Generate .env ⚙️
+        run: |
+          echo "TITLE=\"${{ vars.TITLE }}\"" >> .env
+          echo "PAGE_URL=\"${{ vars.PAGE_URL }}\"" >> .env
+          echo "REPO_OWNER=\"${{ vars.REPO_OWNER }}\"" >> .env
+          echo "REPO_NAME=\"${{ vars.REPO_NAME }}\"" >> .env
+          echo "GA_TRACKING_ID=\"${{ vars.GA_TRACKING_ID }}\"" >> .env
+      
+      - name: Install app 📦
+        run: yarn install # yarn install
+
+      - name: Setup Git Identity 🐙
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "<>"
+      
+      - name: Build and Deploy 🚀
+        run: yarn gh-deploy ${{ github.actor }} ${{ github.token }}

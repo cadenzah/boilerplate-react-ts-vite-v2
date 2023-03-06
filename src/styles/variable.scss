@@ -1,0 +1,23 @@
+// colorsets
+$primary-color: #026236;
+$secondary-color: #b8e491;
+$primary-background-color: #fbfbf0; // #eae7b129
+$white: #fefefe;
+
+$text-default-color: #393939;
+
+// font size
+$font-size-title: 2rem;
+$font-size-default: 0.9rem;
+$font-size-detail: 0.8rem;
+
+// item size
+$item-width-common-small: 20rem; // 320px// for mobile
+$item-width-common-default: 23rem; // 368px
+$item-width-common-medium: 32rem; // 768px
+// $item-width-common-large: 64rem; // 1024px
+
+// media-query
+$wrapper-padding-side: 2rem; // 32px
+$mq-medium: calc($item-width-common-default + 2 * $wrapper-padding-side);
+$mq-large: calc($item-width-common-medium + 2 * $wrapper-padding-side);
