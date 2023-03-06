@@ -26,9 +26,9 @@ git commit -m 'github page deploy'
 github_id=$1
 github_token=$2
 
-PAGE_URL=$(cat ../.env | grep _PAGE_URL | cut -d '=' -f2 | tr -d '"')
-REPO_NAME=$(cat ../.env | grep _REPO_NAME | cut -d '=' -f2 | tr -d '"')
-REPO_OWNER=$(cat ../.env | grep _REPO_OWNER | cut -d '=' -f2 | tr -d '"')
+PAGE_URL=$(cat ../.env | grep PAGE_URL | cut -d '=' -f2 | tr -d '"')
+REPO_NAME=$(cat ../.env | grep REPO_NAME | cut -d '=' -f2 | tr -d '"')
+REPO_OWNER=$(cat ../.env | grep REPO_OWNER | cut -d '=' -f2 | tr -d '"')
 
 if [ ! "$github_id" ] || [ ! "$github_token" ]
 then
