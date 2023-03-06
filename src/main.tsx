@@ -8,8 +8,6 @@ import Routes from '@/routes';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import Navigation from '@/components/Navigation';
-
 // google analytics
 import { initGA } from '@/utils';
 
@@ -20,7 +18,6 @@ createRoot(rootNode).render(
   <React.StrictMode>
     <ToastContainer />
     <BrowserRouter>
-      <Navigation />
       <Routes />
     </BrowserRouter>
   </React.StrictMode>

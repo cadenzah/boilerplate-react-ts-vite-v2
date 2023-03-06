@@ -32,7 +32,6 @@ const routes = Object.entries(ROUTES).map(([name, file]) => {
 export default function Routes(): JSX.Element {
   const App = preserved?.['_app'] || Fragment;
   const NotFound = preserved?.['404'] || Fragment;
-  debugger;
   return (
     <App>
       <Suspense fallback={'Loading...'}>

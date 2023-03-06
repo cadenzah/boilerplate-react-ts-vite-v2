@@ -22,7 +22,7 @@ export const configureEnv = (
   const { mode, ssrBuild } = options;
   const envFile = loadEnv(mode, envPath, prefix);
   const viteEnv: ViteEnv = {
-    BASE_URL: `/${envFile.REPO_NAME ?? ""}`,
+    BASE_URL: `/${envFile.REPO_NAME ?? ''}`,
     MODE: mode,
     DEV: mode === 'development',
     PROD: mode === 'production',
