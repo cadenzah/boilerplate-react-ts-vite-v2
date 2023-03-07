@@ -1,0 +1,1 @@
+import{j as a,a as e}from"./index-081cf53a.js";const t="/boilerplate-react-ts-vite-v2/assets/coding_cat-64140b25.jpg";function s(){return a("div",{className:"profile-container",children:[e("img",{src:t,width:"300px"}),e("p",{children:"profile"})]})}export{s as default};
