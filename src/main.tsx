@@ -17,7 +17,9 @@ const rootNode = document.getElementById('root')!;
 createRoot(rootNode).render(
   <React.StrictMode>
     <ToastContainer />
-    <BrowserRouter>
+    <BrowserRouter
+      basename={APP_ENV.IS_GITHUB_PAGE_DEPLOY ? APP_ENV.BASE_URL : ''}
+    >
       <Routes />
     </BrowserRouter>
   </React.StrictMode>

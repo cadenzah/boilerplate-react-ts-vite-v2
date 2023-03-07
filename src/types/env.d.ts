@@ -3,6 +3,9 @@ declare const APP_ENV: Environment.AppEnv;
 declare namespace Environment {
   interface AppEnv {
     // .env
+    readonly IS_GITHUB_PAGE_DEPLOY: boolean;
+    
+    // Site Metadata
     readonly TITLE: string;
     readonly PAGE_URL: string;
     readonly REPO_OWNER: string;

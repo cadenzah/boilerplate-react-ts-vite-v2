@@ -20,6 +20,7 @@ jobs:
 
       - name: Generate .env ⚙️
         run: |
+          echo "IS_GITHUB_PAGE_DEPLOY=\"true\"" >> .env
           echo "TITLE=\"${{ vars.TITLE }}\"" >> .env
           echo "PAGE_URL=\"${{ vars.PAGE_URL }}\"" >> .env
           echo "REPO_OWNER=\"${{ vars.REPO_OWNER }}\"" >> .env

@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from 'react';
-import type { PropsWithChildren } from 'react';
 
 import Counter from '@/components/Counter';
 

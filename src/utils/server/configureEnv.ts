@@ -22,6 +22,7 @@ export const configureEnv = (
   const { mode, ssrBuild } = options;
   const envFile = loadEnv(mode, envPath, prefix);
   const viteEnv: ViteEnv = {
+    IS_GITHUB_PAGE_DEPLOY: !!envFile.IS_GITHUB_PAGE_DEPLOY,
     BASE_URL: `/${envFile.REPO_NAME ?? ''}`,
     MODE: mode,
     DEV: mode === 'development',

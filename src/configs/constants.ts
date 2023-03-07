@@ -1,3 +1,4 @@
+/** Site Metadata */
 export const TITLE = APP_ENV.TITLE;
 export const PAGE_URL = APP_ENV.PAGE_URL;
 export const REPO_OWNER = APP_ENV.REPO_OWNER;
