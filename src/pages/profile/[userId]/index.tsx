@@ -5,8 +5,8 @@ function Page(): JSX.Element {
   const { userId } = useParams<{ userId: string }>();
 
   return (
-    <div className="Page">
-      <p>{userId}&apos;s profile</p>
+    <div className="profile-user-container">
+      <p>{`${userId}'s profile`}</p>
     </div>
   );
 }
