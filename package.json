@@ -1,8 +1,8 @@
 {
-  "name": "wedding-invitation",
+  "name": "boilerplate-react-ts-vite-v2",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/cadenzah/wedding-invitation.git",
+  "repository": "https://github.com/cadenzah/boilerplate-react-ts-vite-v2",
   "author": "cadenzah <cadenzah93@gmail.com>",
   "license": "MIT",
   "scripts": {
